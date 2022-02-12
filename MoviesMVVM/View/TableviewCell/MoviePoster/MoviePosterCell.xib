@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MoviePosterCell" id="gTV-IL-0wX" customClass="MoviePosterCell" customModule="MoviesMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="302" height="218"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="302" height="218"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="imJ-Jx-QIW">
+                        <rect key="frame" x="10" y="10" width="282" height="198"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6R3-Zy-m4N">
+                                <rect key="frame" x="0.0" y="0.0" width="282" height="198"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w8v-Ab-7LX" customClass="CircularProgressBar" customModule="MoviesMVVM" customModuleProvider="target">
+                                <rect key="frame" x="116" y="74" width="50" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="ZjJ-iN-BH5"/>
+                                    <constraint firstAttribute="height" constant="50" id="wFw-zh-Olo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qX6-LO-FeT">
+                                <rect key="frame" x="0.0" y="168.5" width="282" height="29.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDZ-ja-2ax">
+                                        <rect key="frame" x="10" y="5" width="262" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.79887420452193714" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="PDZ-ja-2ax" firstAttribute="top" secondItem="qX6-LO-FeT" secondAttribute="top" constant="5" id="2Ba-nh-qL9"/>
+                                    <constraint firstItem="PDZ-ja-2ax" firstAttribute="leading" secondItem="qX6-LO-FeT" secondAttribute="leading" constant="10" id="D4x-kp-6DH"/>
+                                    <constraint firstAttribute="bottom" secondItem="PDZ-ja-2ax" secondAttribute="bottom" constant="5" id="MMQ-wv-Efe"/>
+                                    <constraint firstAttribute="trailing" secondItem="PDZ-ja-2ax" secondAttribute="trailing" constant="10" id="Njw-Jv-YIO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6R3-Zy-m4N" firstAttribute="leading" secondItem="imJ-Jx-QIW" secondAttribute="leading" id="4AC-tM-EeT"/>
+                            <constraint firstItem="w8v-Ab-7LX" firstAttribute="centerX" secondItem="imJ-Jx-QIW" secondAttribute="centerX" id="5iJ-1q-7EJ"/>
+                            <constraint firstAttribute="trailing" secondItem="qX6-LO-FeT" secondAttribute="trailing" id="9yH-Cp-jYQ"/>
+                            <constraint firstItem="w8v-Ab-7LX" firstAttribute="centerY" secondItem="imJ-Jx-QIW" secondAttribute="centerY" id="JOO-lw-L1F"/>
+                            <constraint firstItem="qX6-LO-FeT" firstAttribute="leading" secondItem="imJ-Jx-QIW" secondAttribute="leading" id="K49-Ht-k2g"/>
+                            <constraint firstAttribute="bottom" secondItem="6R3-Zy-m4N" secondAttribute="bottom" id="cK1-T0-3aC"/>
+                            <constraint firstItem="6R3-Zy-m4N" firstAttribute="top" secondItem="imJ-Jx-QIW" secondAttribute="top" id="f9M-ly-IJP"/>
+                            <constraint firstAttribute="bottom" secondItem="qX6-LO-FeT" secondAttribute="bottom" id="rjC-l8-8eX"/>
+                            <constraint firstAttribute="trailing" secondItem="6R3-Zy-m4N" secondAttribute="trailing" id="yL4-qe-HRA"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="imJ-Jx-QIW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Hmp-JD-ka0"/>
+                <constraint firstItem="imJ-Jx-QIW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="NuM-Pd-QAl"/>
+                <constraint firstAttribute="bottom" secondItem="imJ-Jx-QIW" secondAttribute="bottom" constant="10" id="OhO-SX-4Kt"/>
+                <constraint firstAttribute="trailing" secondItem="imJ-Jx-QIW" secondAttribute="trailing" constant="10" id="f5n-jJ-yqV"/>
+            </constraints>
+            <size key="customSize" width="302" height="218"/>
+            <connections>
+                <outlet property="containerView" destination="imJ-Jx-QIW" id="7Su-Bp-QEB"/>
+                <outlet property="movieTitleLable" destination="PDZ-ja-2ax" id="KHm-bE-hHM"/>
+                <outlet property="posterImage" destination="6R3-Zy-m4N" id="GFU-VR-nuC"/>
+                <outlet property="progressBar" destination="w8v-Ab-7LX" id="yWO-w7-cQM"/>
+            </connections>
+            <point key="canvasLocation" x="311.59420289855075" y="133.92857142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

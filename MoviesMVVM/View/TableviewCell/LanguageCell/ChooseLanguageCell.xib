@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ChooseLanguageCell" rowHeight="104" id="KGk-i7-Jjw" customClass="ChooseLanguageCell" customModule="MoviesMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mVj-G6-zU4">
+                        <rect key="frame" x="10" y="5" width="300" height="94"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blR-yO-Qav">
+                                <rect key="frame" x="5" y="5" width="260" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gpo-Bu-E18">
+                                <rect key="frame" x="275" y="39.5" width="15" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="gpo-Bu-E18" secondAttribute="height" multiplier="1:1" id="s0r-RL-HId"/>
+                                    <constraint firstAttribute="width" constant="15" id="xGm-3K-WSR"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="blR-yO-Qav" firstAttribute="leading" secondItem="mVj-G6-zU4" secondAttribute="leading" constant="5" id="Gtt-eq-vBv"/>
+                            <constraint firstAttribute="trailing" secondItem="gpo-Bu-E18" secondAttribute="trailing" constant="10" id="Lzc-ui-j5U"/>
+                            <constraint firstAttribute="bottom" secondItem="blR-yO-Qav" secondAttribute="bottom" constant="5" id="YEr-jO-vfy"/>
+                            <constraint firstItem="gpo-Bu-E18" firstAttribute="centerY" secondItem="mVj-G6-zU4" secondAttribute="centerY" id="cf9-of-dOA"/>
+                            <constraint firstItem="blR-yO-Qav" firstAttribute="top" secondItem="mVj-G6-zU4" secondAttribute="top" constant="5" id="edj-g7-kfn"/>
+                            <constraint firstItem="gpo-Bu-E18" firstAttribute="leading" secondItem="blR-yO-Qav" secondAttribute="trailing" constant="10" id="weG-cj-msU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="mVj-G6-zU4" secondAttribute="bottom" constant="5" id="ERx-QJ-UYO"/>
+                    <constraint firstItem="mVj-G6-zU4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="MnP-R2-ks8"/>
+                    <constraint firstItem="mVj-G6-zU4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Vv7-9p-SvQ"/>
+                    <constraint firstAttribute="trailing" secondItem="mVj-G6-zU4" secondAttribute="trailing" constant="10" id="mYU-SN-DOu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="checkMarkImage" destination="gpo-Bu-E18" id="TSG-X1-xKJ"/>
+                <outlet property="containerView" destination="mVj-G6-zU4" id="GMr-Tc-hld"/>
+                <outlet property="langLabel" destination="blR-yO-Qav" id="0cp-Iq-rwD"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="83.705357142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

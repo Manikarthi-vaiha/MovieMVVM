@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="KeywordsCollectionCell" customModule="MoviesMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="239" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="239" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xrE-Ot-EC5">
+                        <rect key="frame" x="0.0" y="77" width="239" height="35"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xex-Ok-b8g">
+                                <rect key="frame" x="10" y="0.0" width="219" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.19633635464093543" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="35" id="8oR-ua-LOY"/>
+                            <constraint firstAttribute="bottom" secondItem="xex-Ok-b8g" secondAttribute="bottom" id="NUW-Uk-8jC"/>
+                            <constraint firstItem="xex-Ok-b8g" firstAttribute="leading" secondItem="xrE-Ot-EC5" secondAttribute="leading" constant="10" id="NVd-m5-yC8"/>
+                            <constraint firstItem="xex-Ok-b8g" firstAttribute="top" secondItem="xrE-Ot-EC5" secondAttribute="top" id="T5j-MC-5uT"/>
+                            <constraint firstAttribute="trailing" secondItem="xex-Ok-b8g" secondAttribute="trailing" constant="10" id="sGz-57-LNK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xrE-Ot-EC5" secondAttribute="trailing" id="mjO-oM-ePH"/>
+                <constraint firstItem="xrE-Ot-EC5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mri-ML-DDo"/>
+                <constraint firstItem="xrE-Ot-EC5" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="yd6-sa-2cE"/>
+            </constraints>
+            <size key="customSize" width="239" height="145"/>
+            <connections>
+                <outlet property="containerView" destination="xrE-Ot-EC5" id="30z-JJ-nfk"/>
+                <outlet property="nameLabel" destination="xex-Ok-b8g" id="6cN-Tt-nAh"/>
+            </connections>
+            <point key="canvasLocation" x="268.84057971014494" y="127.56696428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>
