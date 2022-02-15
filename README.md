@@ -1,8 +1,6 @@
 # MovieMVVM
 
-Hello, 
-
-it's done in UIKit & swift+Combine 
+## UIKit & swift+Combine 
 
 The movie database Features
 
@@ -18,7 +16,7 @@ The movie database Features
     - movie review list & details
     - Movie collections & a list of movies
 
-Screenshots
+# Screenshots
 
 ![alt text](https://github.com/Manikarthi-vaiha/MovieMVVM/blob/main/movieGitImage.png?raw=true)
 
